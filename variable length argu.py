@@ -84,7 +84,7 @@ final(**d)
 final(*data,**d)'''
 
 #Railway ticket
-def ticket(age,gender,price):
+'''def ticket(age,gender,price):
     if age>60:
         if gender=="male":
             d_price=price*0.7
@@ -99,4 +99,30 @@ def ticket(age,gender,price):
 age=int(input("age"))
 gender=input("gender")
 price=int(input("price"))
-print(ticket(age,gender.lower(),price))
+print(ticket(age,gender.lower(),price))'''
+
+while True:
+    def railway_ticket():
+        ticket=1000
+        gender=input("enter the gender")
+        age=int(input("enter the age"))
+        if gender=="m":
+            if age>=60:
+                print("senior citizen")
+                ticket=ticket-30/100*ticket
+                print(ticket)
+            elif age<60:
+                print("normal citizen")
+                print(ticket)
+        elif gender=="f":
+            if age>=60:
+                print("senior citizen")
+                ticket=ticket-50/100*ticket
+                print(ticket)
+            elif age<60:
+                print("normal citizen")
+                ticket=ticket-30/100*ticket
+                print(ticket)
+    railway_ticket()
+              
+    
